@@ -1,0 +1,161 @@
+.profile-page {
+  height: 100%;
+  background-color: #d2cdc7c0;
+  top: 0;
+  padding: 70px;
+}
+
+.user-profile {
+  margin: 70px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-page h1,
+.user-profile h1 {
+  text-align: center;
+  color: #1e7a34;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  gap: 20px;
+}
+
+.profile-details {
+  flex: 1;
+}
+
+.profile-info {
+  font-size: 1.2rem;
+}
+
+.profile-info p {
+  margin: 10px 0;
+}
+
+.change-pass-button {
+  margin-top: 10px;
+}
+.password-change-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.error-message-password{
+  color: red;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+.password-input-container input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background: #f1f1f1;
+  padding-right: 40px;
+  box-sizing: border-box; 
+  padding-right: 40px;
+  
+}
+.password-input-container input:focus {
+  background: #e0e0e0;
+  outline: none;
+}
+.password-input-container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  position: relative;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 15px;
+  color: #66a078;
+  font-size: 1.1rem;
+  margin-bottom: 13px;
+  cursor: pointer;
+  z-index: 1;
+}
+.password-toggle-icon:hover {
+  color: #4d8f4d;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .profile-page {
+    padding: 50px;
+  }
+
+  .profile-container {
+    flex-direction: row;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .password-input-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .profile-page {
+    padding: 30px;
+  }
+
+  .profile-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .password-change-form {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .password-input-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .profile-page {
+    padding: 20px;
+  }
+
+  .user-profile {
+    padding: 15px;
+  }
+
+  .profile-info {
+    font-size: 1rem;
+  }
+
+  .password-input-container input {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  .password-toggle-icon {
+    font-size: 1rem;
+  }
+
+  .profile-page h1,
+  .user-profile h1 {
+    font-size: 2rem;
+  }
+}

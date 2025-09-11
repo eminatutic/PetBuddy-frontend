@@ -1,0 +1,19 @@
+.admin-reviews-page {
+    /* font-family: Arial, sans-serif; */
+    padding: 50px;
+    height: 100%;
+
+    background-color: #d2cdc7c0;
+    padding-top: 140px;
+    padding-bottom: 20px;
+  
+}
+
+ .admin-button-container-a{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+

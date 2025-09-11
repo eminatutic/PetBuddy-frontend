@@ -1,0 +1,37 @@
+.rating-container {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating-container label {
+  margin-right: 10px;
+}
+
+.stars {
+  display: flex;
+  cursor: pointer;
+}
+
+.star-icon {
+  font-size: 2rem; 
+  color: #ccc;
+  margin-right: 5px;
+  transition: color 0.3s ease; 
+}
+
+.star-icon.selected {
+  color: gold; 
+}
+
+.review-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1.1rem;
+  resize: none;
+  max-height: 120px; 
+}

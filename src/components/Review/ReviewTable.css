@@ -1,0 +1,84 @@
+.admin-reviews-table {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 45px;
+    margin-bottom: 30px;
+} 
+
+ .admin-reviews-table-content {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-reviews-table-content th {
+    background-color: #1e7a34;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #1e7a34;
+    color: white;
+}
+
+.admin-reviews-table-content td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #1e7a34;
+    background-color: white;
+} 
+
+ .admin-review-email-username {
+    width: 15%;
+}
+
+.admin-review-comment-rating {
+    width: 30%;
+}
+.admin-review-pet{
+    width: 15%;
+}
+.admin-review-time {
+    width: 15%;
+    font-style: italic;
+}
+
+.admin-review-status {
+    width: 10%;
+    text-align: center;
+} 
+
+
+  .admin-pet-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.admin-pet-name {
+  text-align: center;
+  font-weight: bold;
+}
+
+
+ .admin-pet-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.admin-review-actions {
+    width: 6%;
+    text-align: center; 
+    white-space: nowrap;
+} 
+
+
+.admin-no-reviews {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #777;
+}
+
+
+

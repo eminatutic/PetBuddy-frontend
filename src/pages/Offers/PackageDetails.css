@@ -1,0 +1,111 @@
+.package-details {
+  text-align: center;
+  padding-top: 80px; 
+  background-color: #d2cdc7c0;
+  padding-bottom: 180px;
+  /* position: relative; */
+}
+
+.package-details h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #1e7a34; 
+  margin-bottom: 20px;
+}
+
+.package-details h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.package-price {
+  font-size: 18px;
+  color: red;
+  margin-bottom: 20px;
+}
+
+.package-description {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.pets-list {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+  width: 90%; 
+  margin: 0 auto; 
+  background-color: #fff;
+  border-radius: 8px; 
+}
+
+.pet-card-details {
+  display: flex;
+  align-items: center; 
+  justify-content: flex-start;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  border-top: 1px solid #ccc;
+}
+
+.pet-card-details:first-child {
+  border-top: none; 
+}
+
+.pet-image-details {
+  width: 200px; 
+  height: 200px; 
+  object-fit: cover;
+  margin-right: 20px; 
+  border-radius: 8px;
+}
+
+.pet-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.pet-info h4 {
+  font-size: 20px;
+  margin: 0;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.pet-info p {
+  font-size: 16px;
+  color: #444;
+  margin: 5px 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: normal;
+}
+
+.delete-icon-pack {
+  position: fixed; 
+  top: 120px; 
+  right: 20px; 
+  background-color: #ff0000;
+  color: rgb(255, 255, 255);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5px; 
+  cursor: pointer;
+  z-index: 10; 
+  border: 1px solid rgb(0, 0, 0);
+  padding: 10px;
+}
+
+.delete-icon-pack:hover {
+  background-color: #d40000;
+}
+

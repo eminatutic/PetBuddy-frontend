@@ -1,0 +1,132 @@
+.pet-sections { 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 60px;
+  justify-items: center; 
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+}
+
+.pet-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; 
+  max-width: 350px; 
+  text-decoration: none;
+  border: 1px solid#5686665b;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.203);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #bebbbba4;
+  height: 490px; 
+}
+.pet-section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.203);
+}
+
+.pet-section-image {
+  width: 100%; 
+  height: 270px; 
+  display: flex;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.pet-section-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.pet-section-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px;
+  height: 100%; 
+}
+.pet-section-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2b2a2a;
+  text-align: center;
+  margin-bottom: 15px; 
+  width: 100%;
+}
+.pet-section-content p {
+  font-size: 16px;
+  color: #3c3b3b;
+  line-height: 1.5;
+  margin-bottom: 15px; 
+  text-align: center;
+  width: 100%;
+}
+
+.icon {
+  font-size: 25px;
+  color:#1e7a34;
+  transition: color 0.3s, opacity 0.3s;
+}
+
+.pet-section:hover .icon {
+  color:#34523e;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .pet-sections {
+    grid-template-columns: repeat(2, 1fr); 
+    padding: 0 40px; 
+  }
+
+  .pet-section {
+    max-width: 90%; 
+    height: auto; 
+  }
+
+  .pet-section-content h2 {
+    font-size: 22px; 
+  }
+
+  .pet-section-content p {
+    font-size: 14px; 
+  }
+
+  .icon {
+    font-size: 20px; 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pet-sections {
+    grid-template-columns: 1fr; 
+    padding: 0 20px; 
+  }
+
+  .pet-section {
+    max-width: 100%; 
+    height: auto; 
+  }
+
+  .pet-section-content h2 {
+    font-size: 20px; 
+  }
+
+  .pet-section-content p {
+    font-size: 14px; 
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+}

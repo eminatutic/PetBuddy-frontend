@@ -1,0 +1,65 @@
+.auth-prompt-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.auth-prompt-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 600px;
+    font-size: 30px;
+}
+
+.auth-prompt-actions {
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.auth-prompt-actions p {
+    margin: 5px 0;
+}
+
+.auth-prompt-actions a {
+    text-decoration: none;
+    color: #6c584c;
+    font-weight: bold;
+}
+
+.auth-prompt-actions a:hover {
+    color: #66a078;
+}
+
+
+@media screen and (max-width: 768px) {
+    .auth-prompt-content {
+        width: 90%; 
+        font-size: 24px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .auth-prompt-content {
+        width: 80%;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .auth-prompt-actions {
+        font-size: 14px;
+    }
+
+    .auth-prompt-actions a {
+        font-size: 14px;
+    }
+}

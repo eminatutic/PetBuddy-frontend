@@ -1,0 +1,41 @@
+.footer {
+  background-color: #f1f1f1;
+  color: #333;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  margin-top: auto; 
+}
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .social-links a {
+    margin: 0 10px;
+    color: #333; 
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .footer-content {
+      padding: 10px;
+    }
+  
+    .social-links {
+      display: block;
+      margin-top: 10px;
+    }
+  
+    .social-links a {
+      display: block;
+      margin: 5px 0;
+    }
+  }
+  

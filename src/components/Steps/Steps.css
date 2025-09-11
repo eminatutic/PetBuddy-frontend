@@ -1,0 +1,77 @@
+.pet-steps-container {
+    text-align: center;
+    padding-bottom: 40px;
+    border: 2px solid #1e7a34;
+    margin: 20px;
+    margin-top: 30px;
+}
+
+.pet-steps-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.pet-step-card {
+    width: 260px;
+    padding: 20px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.pet-step-icon {
+    font-size: 50px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.pet-step-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.pet-step-line {
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+    margin: 15px 0;
+}
+
+.pet-step-description {
+    font-size: 16px;
+    color: #666;
+}
+
+.pet-steps-container h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .pet-step-title {
+    font-size: 18px;
+  }
+
+  .pet-step-description {
+    font-size: 14px;
+  }
+
+  .pet-steps-container h2 {
+    font-size: 28px;
+  }
+
+  .pet-step-icon {
+    font-size: 40px;
+  }
+
+  .pet-steps-wrapper {
+    gap: 20px;
+    justify-content: center;
+  }
+}

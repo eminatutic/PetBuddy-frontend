@@ -1,0 +1,128 @@
+.error-message {
+    margin: 0 auto;
+    width: 100%;
+    color: rgba(255, 0, 0, 0.8); 
+    position: fixed;
+    text-align: center;
+    font-size: 18px;
+    z-index: 1000; 
+}
+
+.all-pageT {
+    background-color: #d2cdc7c0;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.all-pageT h3 {
+    font-size: 30px;
+}
+
+.no-pets-message {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin: 100px auto;
+}
+
+.user-textT {
+    margin-right: 200px;
+}
+
+.admin-textT {
+    margin-right: 290px;
+}
+
+.search-and-text-bytype {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-and-result-bytype {
+    display: flex;
+    flex-direction: column;
+}
+
+.result-info-bytype {
+    text-align: center;
+    margin: 0;
+}
+
+.pets-sideT {
+    display: flex;
+    flex-wrap: nowrap; 
+    align-items: flex-start; 
+    gap: 30px;
+    padding: 20px;
+}
+
+.search-bar-bytype {
+    margin-left: 20px;
+}
+
+.search-bar-bytype input {
+    padding: 12px;
+    font-size: 13pt;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  .search-and-text-bytype {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .user-textT, .admin-textT {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .search-bar-bytype {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pets-sideT {
+    flex-direction: column;   
+    align-items: center;      
+    gap: 20px;
+  }
+
+  .all-pageT h3 {
+    font-size: 22px;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .search-bar-bytype input {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .result-info-bytype {
+    font-size: 14px;
+  }
+
+  .no-pets-message {
+    font-size: 16px;
+    margin-right: 120px;
+  }
+
+  .search-and-result-bytype {
+    width: 100%;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .search-bar-bytype{
+    width: 100%;
+  }
+}

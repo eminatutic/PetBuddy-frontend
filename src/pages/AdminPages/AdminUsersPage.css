@@ -1,0 +1,84 @@
+.admin-users-page {
+    padding-top: 80px ;
+    background-color: #d2cdc7c0;
+    height: 100%;
+    padding-bottom: 30px;
+}
+
+.no-users-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.admin-users-table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 0 auto;  
+}
+
+.admin-title {
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+.admin-users-table th,
+.admin-users-table td {
+    border: 1px solid #1e7a34; 
+    padding: 12px;
+    text-align: left;
+}
+
+.admin-users-table th {
+    background-color: #1e7a34;
+    color: white;
+    font-weight: bold;
+    text-align: center; 
+    font-size: 17px;
+    padding: 8px;
+}
+
+.admin-users-table tr {
+    background-color: white;
+    border-bottom: 1px solid #1e7a34; 
+    font-size: 16px;
+}
+
+.admin-users-table tr:hover {
+    background-color: #e3e3e3;
+}
+
+.admin-delete-icon {
+    color: red;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.admin-delete-icon:hover {
+    color: darkred;
+}
+
+.admin-users-table td.column-wide,
+.admin-users-table th.column-wide {
+    width: 50%; 
+}
+
+
+.admin-deactivated-button-container {
+    position: absolute;
+    top: 150px;
+    right: 70px;
+}
+
+@media screen and (max-width: 768px) {
+  .admin-deactivated-button-container{
+    top: 130px;
+    right: 20px;
+  }
+}
+
+
+
+
+

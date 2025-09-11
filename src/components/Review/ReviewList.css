@@ -1,0 +1,60 @@
+.reviews-list {
+  margin-top: 20px;
+}
+
+.review {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  padding-top: 0;
+}
+
+.review p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.review strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.review .user-info {
+  font-style: italic;
+  font-size: 1rem;
+  color: #888;
+}
+
+.review .time-info {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.review .rating {
+  color: #f39c12;
+}
+
+#username {
+  font-size: 20pt;
+  color: black;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-iconR {
+  font-size: 1.2rem;
+  color: #7f7b7b9a;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.delete-iconR:hover {
+  transform: scale(1.1);
+}

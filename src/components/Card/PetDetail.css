@@ -1,0 +1,203 @@
+.pet-cardD {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+  overflow: hidden;
+  width: 100%;
+  max-width: 1300px;
+  height: 600px;
+  margin: 60px auto; 
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-top: 110px;
+}
+
+.image-containerD {
+  flex: 1.3;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1; 
+  max-height: 600px;
+}
+
+.pet-imageD {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.info-containerD {
+  flex: 1.6;
+  display: flex;
+  flex-direction: column;
+  position: relative; 
+}
+
+.other {
+  margin: 20px
+}
+
+.pet-cardD h2 {
+  font-size: 2.6rem; 
+  font-weight: 700;
+  color: #000000; 
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.info-containerD p {
+  font-size: 1.3rem;
+  color: #758485; 
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.info-containerD p strong {
+  color: #34495e; 
+}
+
+#price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 15px;
+  color: red;
+}
+.status-detail-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute; 
+  bottom: 70px; 
+  left: 30px; 
+  margin-top: 5px;
+}
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute; 
+  bottom: 20px; 
+  left: 30px; 
+  margin-top: 5px;
+}
+
+.typeandheart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.heart {
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.type2 {
+  margin:  50px auto 10px;
+  margin-top: 10px;
+}
+
+
+.favorite-icon {
+  color: white; 
+  background-color: black; 
+  border: 1px solid black; 
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: transform 0.3s ease-in-out;
+  padding: 5px; 
+}
+
+.favorite-icon.favorited {
+  color: red; 
+  background-color: white; 
+  border: 1px solid red; 
+}
+.favorite-icon:hover {
+  transform: scale(1.2); 
+}
+
+.pencil {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.pencil:hover {
+  transform: scale(1.1);
+}
+
+.pet-details-trash {
+  margin-right: 20px;
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.pet-details-trash:hover {
+  transform: scale(1.1);
+}
+.other #status-detail{
+  color: #1e7a34;
+}
+
+
+@media screen and (max-width: 768px) {
+  .status-detail-container,
+  .price-container {
+    position: static; 
+    margin: 10px 0;
+  }
+  .pet-cardD {
+    flex-direction: column; 
+    height: auto; 
+    margin-top: 37px;
+    border-radius: 0;
+  }
+
+  .image-containerD {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+  }
+
+  .pet-imageD {
+    width: 300px;  
+    height: 300px;  
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .info-containerD {
+    padding: 15px;
+    position: static; 
+  }
+
+  .status-detail-container,
+  .price-container {
+    position: static; 
+    margin-top: 10px;
+  }
+
+  .pet-cardD h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .info-containerD p {
+    font-size: 1rem;
+  }
+
+  .favorite-icon,
+  .pencil,
+  .pet-details-trash {
+    font-size: 1.4rem;
+  }
+}

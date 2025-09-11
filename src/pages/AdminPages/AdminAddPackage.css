@@ -1,0 +1,235 @@
+.pets-side-package{
+    display: flex;
+    flex-wrap: nowrap; 
+    align-items: flex-start; 
+    gap: 30px;
+    padding: 20px;
+    
+}
+.pet-form{
+   margin: 0 auto;
+}
+.admin-add-package{
+    padding-top: 130px;
+    background-color: #d2cdc7c0;
+}
+.admin-add-package h3{
+    font-size: 30px;
+}
+.add-package-page{
+    background-color: #d2cdc7c0;
+    padding-top: 100px;
+}
+.add-package-page h3{
+    font-size: 30px;
+}
+.search-and-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+.search-and-result{
+    display: flex;
+    flex-direction: column;
+}
+
+.result-info{
+    text-align: center;
+    margin: 0;
+}
+
+.package-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 900px;
+   
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.package-form h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #1e7a34;
+    margin-bottom: 20px;
+}
+
+.package-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-wrapper-package {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.input-description-package {
+    height: 120px;
+    resize: vertical;
+  
+}
+
+.input-price-package{
+    height: 50px;
+    margin-top: 4px;
+}
+
+.input-price-package,
+.input-description-package {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: inherit;
+
+}
+.selected-pets {
+    margin-bottom: 15px;
+}
+
+.selected-pets h4 {
+    font-size: 18px;
+    color: #333;
+}
+.selected-pets .pet-name {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #e2f3e2;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #1e7a34;
+}
+
+.package-form p {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-wrapper-package .error-message-packagea,
+.selected-pets .error-message-packagea {
+    color: rgba(255, 0, 0, 0.8);
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.error-message-pack-create{
+    margin: 0 auto;
+    top: 140px;
+    width: 100%;
+    color: rgba(255, 0, 0, 0.8); 
+    position: fixed;
+    text-align: center;
+    font-size: 18px;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 768px) {
+  .pets-side-package {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+    align-items: center;
+  }
+
+  .search-and-text {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 15px;
+    gap: 10px;
+  }
+
+  .search-and-result {
+    width: 100%;
+  }
+
+  .search-bar input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .result-info {
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: left;
+  }
+
+   .package-form {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .package-form h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .package-inputs {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .input-wrapper-package {
+    width: 100%;
+  }
+
+  .input-description-package,
+  .input-price-package {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .selected-pets h4 {
+    font-size: 16px;
+  }
+
+  .selected-pets .pet-name {
+    font-size: 14px;
+    padding: 4px 8px;
+    margin-bottom: 5px;
+  }
+
+  .package-form p {
+    font-size: 16px;
+  }
+
+  .error-message-packagea,
+  .error-message-pack-create {
+    font-size: 14px;
+  }
+
+  .submit-btn-add-pack {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pets-side-package {
+    align-items: center;
+  }
+
+  .package-form {
+    width: 350px;
+    padding: 10px;
+  }
+    
+  .search-bar{
+    width: 100%;
+  }
+}
+

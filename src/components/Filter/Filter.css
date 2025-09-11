@@ -1,0 +1,128 @@
+.pet-navigation {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgb(108, 106, 106);
+  gap: 10px;
+  background-color: 	#ffffff;
+  /* max-height: 1090px; */
+  height: auto;
+  justify-content: center;
+  
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.filter-group:last-child {
+  border-bottom: none;
+}
+
+.filter-group h4 {
+  font-size: 22px;
+  color: #1e7a34;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.filter-group label {
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(28, 27, 27, 0.903);
+  font-weight: 100;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: #1e7a34; 
+}
+.mobile-filter-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; 
+}
+
+.mobile-filter-panel {
+  background-color: white;
+  width: 100vw;
+  height: 100vh; 
+  padding: 20px;
+  overflow-y: auto;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.close-filter-btn {
+  margin-top: auto; 
+ margin-bottom: 20px;
+  width: 100%;
+}
+
+.filter-toggle-button  {
+  background-color: #1e7a34;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(30, 122, 52, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: 160px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+.filter-toggle-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .filter-toggle-mobile {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+ .pet-navigation.desktop-filters {
+    display: none; 
+  }
+
+  .filter-toggle-mobile {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .pet-navigation {
+    width: 100%;
+    padding: 10px;
+    box-shadow: none;
+  }
+
+  .filter-group label {
+    font-size: 16px;
+  }
+
+  .filter-group h4 {
+    font-size: 18px;
+  }
+}

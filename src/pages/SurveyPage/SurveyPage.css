@@ -1,0 +1,84 @@
+.survey-page {
+    margin-top: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d2cdc7c0;
+}
+.survey-page-admin{
+    margin-top: 40px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d2cdc7c0;;
+}
+
+.survey-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    margin: 0 20px;
+}
+
+#title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1e7a34;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+    margin-top: 0;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    resize: vertical;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+@media screen and (max-width: 768px) {
+    .survey-card {
+        max-width: 460px;
+        padding: 25px 20px;
+        margin: 0 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .survey-card {
+        max-width: 330px;
+        padding: 20px 15px;
+        margin: 0 10px;
+    }
+}

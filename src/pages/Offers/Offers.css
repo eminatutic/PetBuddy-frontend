@@ -1,0 +1,53 @@
+.offers{
+  background-color: #d2cdc7c0;
+  height: 100%;
+}
+
+.offers-header {
+  position: relative;
+  text-align: center;
+  padding:80px 20px;
+  background-color: #f4f4f4;
+  border-bottom: 2px solid #1e7a34;
+}
+  
+.offers-header h2 {
+    font-size: 32px;
+    color: #1e7a34;
+    font-weight: bold;
+    /* font-family: Arial, Helvetica, sans-serif;  */
+}
+
+.offers-text {
+  font-size: 18px;
+  color: #333;
+  margin-top: 10px;
+  line-height: 1.6;
+  /* font-family: Arial, Helvetica, sans-serif;  */
+  font-weight: 400;
+  max-width: 80%;
+  text-align: center;
+  margin:  0 auto;
+}
+.exclusive-note {
+  font-size: 18px;
+  color: #ff4747; 
+  margin-top: 15px;
+  font-weight: 600;
+  font-style: italic;
+}
+.no-packages-message{
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  margin: 100px auto;
+}
+.error-message-offers {
+  margin: 50px auto;
+  width: 100%;
+  color: rgba(255, 0, 0, 0.8); 
+  position: fixed;
+  text-align: center;
+  font-size: 18px;
+  z-index: 1000; 
+}

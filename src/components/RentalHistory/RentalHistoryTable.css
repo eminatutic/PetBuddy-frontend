@@ -1,0 +1,95 @@
+.admin-rentals-table {
+    width: 90%;
+    overflow-x: auto;
+    margin: 0 auto;  
+    padding-bottom: 70px;
+}
+
+.admin-rentals-table-content {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-rentals-table-content th {
+    background-color: #1e7a34;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #1e7a34;
+    color: white;
+}
+
+.admin-rentals-table-content td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #1e7a34;
+    background-color: white;
+}
+
+.admin-rent-email {
+    width: 15%;
+}
+
+.admin-rent-address {
+    width: 25%;
+}
+
+.admin-rent-days {
+    width: 10%;
+}
+
+.admin-rent-payment-method {
+    width: 12%;
+}
+
+.admin-rent-total-price {
+    width: 10%;
+}
+
+.admin-rent-date {
+    width: 15%;
+    font-style: italic;
+}
+
+.admin-rent-pet {
+    width:auto;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.admin-rent-pet div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.admin-rent-pet-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.admin-no-rentals {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #777;
+}
+.no-email{
+    width: 80%;
+    
+}
+.no-email .admin-rent-days{
+    width: 15%;
+}
+.no-email .admin-rent-payment-method{
+    width: 15%;
+}
+.no-email .admin-rent-date{
+    width: 18%;
+}
+.no-email .admin-rent-pet{
+    width: auto;
+}
+.no-email .admin-rent-address{
+    width: 23%;
+}
