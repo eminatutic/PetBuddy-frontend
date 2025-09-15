@@ -13,6 +13,7 @@ function PetDetail({pet, isFavorite, toggleFavorite, isUserRole, isAdminRole, on
   const size = SizeEnum[pet.size] || 'Unknown';
   const statusText = pet.status === true ? 'Available' : 'Unavailable';
 
+
   return (
     <div className="pet-cardD">
       <div className="image-containerD">
