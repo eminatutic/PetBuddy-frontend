@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   preview: {
-    allowedHosts: ['https://petbuddy.up.railway.app/'],
+    allowedHosts: ['https://petbuddy.up.railway.app'],
     port: 5173,
   }
 })
