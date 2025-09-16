@@ -72,25 +72,23 @@ const handleSubmit = async (formData) => {
 };
 
 const validateForm = (formData) => {
-  console.log("Form data during validation:", formData); 
+  const { username, email, password, confirmPassword } = formData;
 
-  if (!formData.username || !formData.email || !formData.password || !formData.confirmPassword) {
+  if (!username || !email || !password || !confirmPassword) {
     setError("All fields are required.");
     return false;
   }
 
-  if (formData.password !== formData.confirmPassword) {
+  if (password !== confirmPassword) {
     setError("Passwords do not match.");
     return false;
   }
 
   const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-  if (!emailRegex.test(formData.email)) {
+  if (!emailRegex.test(email)) {
     setError("Please enter a valid email address.");
     return false;
   }
-
-  const password = formData.password;
 
   if (password.length < 5) {
     setError("Password must be at least 5 characters.");
@@ -103,12 +101,10 @@ const validateForm = (formData) => {
     return false;
   }
 
-  
-  if (!/[0-9]/.test(password)) {
+  if (!/\d/.test(password)) {
     setError("Password must contain at least one number.");
     return false;
   }
-
 
   if (!/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
     setError("Password must contain at least one special character.");
@@ -123,6 +119,7 @@ const validateForm = (formData) => {
 
   return true;
 };
+
 
   
 return (
