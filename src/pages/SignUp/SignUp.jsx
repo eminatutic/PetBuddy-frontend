@@ -73,7 +73,7 @@ const handleSubmit = async (formData) => {
 
 const validateForm = (formData) => {
   console.log("Form data during validation:", formData); 
-  
+
   if (!formData.username || !formData.email || !formData.password || !formData.confirmPassword) {
     setError("All fields are required.");
     return false;
@@ -81,7 +81,6 @@ const validateForm = (formData) => {
 
   if (formData.password !== formData.confirmPassword) {
     setError("Passwords do not match.");
-    console.log("Passwords do not match:", formData.password, formData.confirmPassword); 
     return false;
   }
 
@@ -98,22 +97,27 @@ const validateForm = (formData) => {
     return false;
   }
 
-  if (/^\d+$/.test(password)) {
-    setError("Password cannot be only numbers.");
-    return false;
-  }
-
+  
   if (!/[a-z]/.test(password)) {
     setError("Password must contain at least one lowercase letter.");
     return false;
   }
+
+  
   if (!/[0-9]/.test(password)) {
     setError("Password must contain at least one number.");
     return false;
   }
 
+
   if (!/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
     setError("Password must contain at least one special character.");
+    return false;
+  }
+
+
+  if (/^\d+$/.test(password)) {
+    setError("Password cannot be only numbers.");
     return false;
   }
 
