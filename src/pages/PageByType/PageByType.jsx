@@ -168,7 +168,7 @@ function PageByType() {
   ) : (
           <Cards 
             cardData={petsToShow.map(pet => ({
-              imageUrl: "/images/cat.jpg",
+              imageUrl: pet.imageUrl,
               nameImage: pet.nameImage,
               name: pet.name,
               price: pet.price,

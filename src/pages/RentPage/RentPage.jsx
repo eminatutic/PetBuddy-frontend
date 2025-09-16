@@ -214,7 +214,7 @@ const RentPage = () => {
                     <div className="rent-page-pet-info">
                         {petData && type === 'pet' && (
                             <div className="pet-card">
-                                <img src="/images/cat.jpg" alt={petData.name} className="rent-page-pet-image" />
+                                <img src={petData.imageUrl} alt={petData.name} className="rent-page-pet-image" />
                                 <div className="pet-info">
                                     <h3>{petData.name}</h3>
                                     <p>Price per day: €{petData.price}</p>
@@ -223,21 +223,21 @@ const RentPage = () => {
                         )}
 
                         {petData && type === 'package' && (
-  <div>
-    <h3>Package includes:</h3>
-    {petData.specialPackagePets?.map(({ pet }, index) => (
-      <div key={index} className="pet-card">
-        <img src={pet.imageUrl} alt={pet.name} className="rent-page-pet-image" />
-        <div className="pet-info">
-          <h3>{pet.name}</h3>
-        </div>
-      </div>
-    ))}
-    <div className="pet-info">
-      <p>Package price per day: €{petData.price}</p>
-    </div>
-  </div>
-)}
+                <div>
+                    <h3>Package includes:</h3>
+                    {petData.specialPackagePets?.map(({ pet }, index) => (
+                    <div key={index} className="pet-card">
+                        <img src={pet.imageUrl} alt={pet.name} className="rent-page-pet-image" />
+                        <div className="pet-info">
+                        <h3>{pet.name}</h3>
+                        </div>
+                    </div>
+                    ))}
+                    <div className="pet-info">
+                    <p>Package price per day: €{petData.price}</p>
+                    </div>
+                </div>
+                )}
                     </div>
                 </div>
                 <section className="rent-page-summary">
