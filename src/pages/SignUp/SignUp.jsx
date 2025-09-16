@@ -48,7 +48,7 @@ const handleSubmit = async (formData) => {
   setLoading(true);
   setError("");
 
-  // Validacija lozinke i ostalih polja
+  
   if (!validateForm(formData)) {
     setLoading(false);
     return;
@@ -105,6 +105,10 @@ const validateForm = (formData) => {
 
   if (!/[a-z]/.test(password)) {
     setError("Password must contain at least one lowercase letter.");
+    return false;
+  }
+  if (!/[0-9]/.test(password)) {
+    setError("Password must contain at least one number.");
     return false;
   }
 
