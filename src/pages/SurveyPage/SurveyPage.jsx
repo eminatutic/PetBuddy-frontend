@@ -55,19 +55,15 @@ function SurveyPage() {
         setShowMismatch(false);
     };
 
-    const handleChange = (e) => {
-        const { name, value, type, checked } = e.target;
-    
-        setFormData({
-            ...formData,
-            [name]: type === 'checkbox'
-                ? checked
-                    ? [...formData[name], value]
-                    : formData[name].filter((item) => item !== value)
-                : value,
-        });
-    };
-    
+const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setFormData({
+        ...formData,
+        [name]: value, 
+    });
+};
+
     const handleSubmit = (e) => {
         e.preventDefault();
     
@@ -277,17 +273,19 @@ function SurveyPage() {
                 <div className="form-group">
                     <label>How would you describe your lifestyle?</label>
                     <div>
-                        {["active", "calm", "mixed"].map((lifestyle) => (
+                       {["active", "calm", "mixed"].map((lifestyle) => (
                             <label key={lifestyle}>
                                 <input
-                                    type="checkbox"
+                                    type="radio"
                                     name="lifestyle"
                                     value={lifestyle}
-                                    onChange={handleChange}
+                                    checked={formData.lifestyle === lifestyle}
+                                    onChange={(e) => setFormData({ ...formData, lifestyle: e.target.value })}
                                 />
                                 {lifestyle.charAt(0).toUpperCase() + lifestyle.slice(1)}
                             </label>
                         ))}
+
                     </div>
                     {errorMessages.lifestyle && <p className="error">{errorMessages.lifestyle}</p>}
                 </div>
@@ -298,16 +296,18 @@ function SurveyPage() {
                         {["short", "medium", "long"].map((duration) => (
                             <label key={duration}>
                                 <input
-                                    type="checkbox"
+                                    type="radio"
                                     name="rentalDuration"
                                     value={duration}
-                                    onChange={handleChange}
+                                    checked={formData.rentalDuration === duration}
+                                    onChange={(e) => setFormData({ ...formData, rentalDuration: e.target.value })}
                                 />
                                 {duration === "short" ? "Short term (1 week - 1 month)" :
                                     duration === "medium" ? "Medium term (1-3 months)" :
                                         "Long term (3+ months)"}
                             </label>
                         ))}
+
                     </div>
                     {errorMessages.rentalDuration && <p className="error">{errorMessages.rentalDuration}</p>}
                 </div>
