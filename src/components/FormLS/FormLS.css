@@ -5,7 +5,9 @@
     margin-top: 70px;
       padding: 0 20px 100px 20px;
 }
-
+.form-error{
+  color: red;
+}
 .form-image img {
     max-width: 100%;
     height: auto;

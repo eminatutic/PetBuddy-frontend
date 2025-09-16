@@ -87,7 +87,7 @@ height: 40px;
   }
 }
 
-@media screen and(max-width: 768px) {
+@media screen and (max-width: 768px) {
   
   .pets-side {
     flex-direction: column;   

@@ -46,26 +46,28 @@ const navigate = useNavigate();
 
 const handleSubmit = async (formData) => {
   setLoading(true);
-  setError("");  
+  setError("");
 
-  if (!validateForm(formData)) {  
+  // Validacija lozinke i ostalih polja
+  if (!validateForm(formData)) {
     setLoading(false);
     return;
   }
+
   try {
     const response = await axiosInstance.post("/User/register-user", formData);
-    if (response.data.includes("Username is already taken") || response.data.includes("Email is already taken")) {
-      setError(response.data); 
-      toast.error(response.data);  
-    } else {
-      toast.success("Registration successful! Redirecting to login..."); 
-      setTimeout(() => navigate("/login",{ state: { from } }), 2000); 
-    }
+    toast.success(response.data + " Redirecting to login...");
+    setTimeout(() => navigate("/login", { state: { from } }), 2000);
   } catch (err) {
-    setError("Registration failed. Please try again.");
-    toast.error("Registration failed. Please try again."); 
+    if (err.response && err.response.status === 400) {
+      setError(err.response.data);
+      toast.error(err.response.data);
+    } else {
+      setError("Registration failed. Please try again.");
+      toast.error("Registration failed. Please try again.");
+    }
   } finally {
-    setLoading(false);  
+    setLoading(false);
   }
 };
 
@@ -89,12 +91,31 @@ const validateForm = (formData) => {
     return false;
   }
 
-  if (formData.password.length < 6) {
-    setError("Password must be at least 6 characters.");
+  const password = formData.password;
+
+  if (password.length < 5) {
+    setError("Password must be at least 5 characters.");
     return false;
   }
+
+  if (/^\d+$/.test(password)) {
+    setError("Password cannot be only numbers.");
+    return false;
+  }
+
+  if (!/[a-z]/.test(password)) {
+    setError("Password must contain at least one lowercase letter.");
+    return false;
+  }
+
+  if (!/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
+    setError("Password must contain at least one special character.");
+    return false;
+  }
+
   return true;
 };
+
   
 return (
   <FormLS
