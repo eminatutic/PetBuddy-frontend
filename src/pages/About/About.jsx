@@ -46,7 +46,7 @@ function About() {
               </p>
               <p>Email: <strong>petbuddy_support@gmail.com</strong></p>
               <p>Phone: <strong>+1 555-987-6543</strong></p>
-              <p>Address: <strong>123 Pet Haven Lane, Greenfield, CA 93927</strong></p>
+              <p>Address: <strong>123 Pet Haven Lane</strong></p>
             </div>
             <div className="organization-image">
               <img src="./images/organization1.jpg" alt="Organization" />

@@ -29,7 +29,7 @@ return (
           Twitter
         </a>
       </div>
-      <p>Phone number: 065278239           Address: King 23</p>
+      <p>Phone number: +1 555-987-6543           Address: 123 Pet Haven Lane</p>
     </div>
   </footer>
 );
