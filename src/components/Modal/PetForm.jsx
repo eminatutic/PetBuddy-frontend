@@ -146,7 +146,7 @@ function PetForm({ onClose, onClick, isEditing, petData = {} }) {
                                 <input
                                     type="number"
                                     id="pet-age"
-                                    placeholder="Enter pet's age"
+                                    placeholder="Enter pet's age (months)"
                                     value={petAge}
                                     onChange={(e) => setPetAge(e.target.value)}
                                 />

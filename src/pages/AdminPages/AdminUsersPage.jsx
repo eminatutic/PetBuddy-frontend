@@ -58,6 +58,7 @@ function AdminUsersPage() {
             await axiosInstance.delete(`/User/delete-user/${userToDelete}`);
             setUsers(users.filter(user => user.id !== userToDelete));
             toast.success("User deleted successfully!");
+             await fetchDeactivatedUsers();
         } catch (err) {
             console.log(err.message);
             toast.error("Error deleting user.");
