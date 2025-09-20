@@ -62,6 +62,17 @@ function Navbar() {
         </div>
 
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          {isUser && (
+            <li className="nav-item">
+            <Link to="/pets" className={`nav-links ${isActive('/pets') ? 'active' : ''}`} onClick={closeMobileMenu} 
+            style={{ 
+              color: '#1e7a34',
+              fontWeight: 'bold'
+            }}>
+              VIEW PETS
+            </Link>
+          </li>
+           )}
           <li className="nav-item">
             <Link to="/" className={`nav-links ${isActive('/') ? 'active' : ''}`} onClick={closeMobileMenu}>
               Home

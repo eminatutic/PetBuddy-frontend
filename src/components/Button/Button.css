@@ -96,7 +96,7 @@
   margin-right: 30px;
   position: fixed;
   right: 0;
-  z-index: 10;
+  z-index: 100;
 }
 @media screen and (max-width: 768px) {
   .add-pet-button{
@@ -562,12 +562,13 @@ OFFERS/PACKAGE DETAILS/ADD PACKAGE  */
 }
 @media screen and (max-width: 768px) {
   .add-package-btn {
-    font-size: 17px;
+    font-size: 22px;
     padding: 8px;
-    margin-top: 150px;
-
+    margin-top: 190px;
+    /* position: fixed; */
     display: block;
-    width: 30%;
+    width: 40%;
+    /* z-index: 100; */
   }
 }
 
